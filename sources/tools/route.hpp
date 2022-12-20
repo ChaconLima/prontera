@@ -2,13 +2,11 @@
 #define ROUTE_HPP
 
 #include <string>
-#include <point/point.hpp>
-#include <vector>
+#include <tools/point.hpp>
 
 namespace route {
 
     using namespace point;
-    using Points = std::vector<Point>;
 
     class Route {
 

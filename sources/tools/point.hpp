@@ -2,6 +2,7 @@
 #define POINT_HPP
 
 #include <string>
+#include <vector>
 
 namespace point{
 
@@ -12,6 +13,7 @@ namespace point{
         double latitude;
         double longitude;
     };
+    using Points = std::vector<Point>;
 }
 
 #endif
