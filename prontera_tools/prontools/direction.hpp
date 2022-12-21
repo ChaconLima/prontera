@@ -2,7 +2,7 @@
 #define DIRECTION_HPP
 
 #include <string>
-#include<map>
+#include <map>
 
 namespace direction{
 

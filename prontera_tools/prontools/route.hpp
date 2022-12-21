@@ -2,7 +2,7 @@
 #define ROUTE_HPP
 
 #include <string>
-#include <tools/point.hpp>
+#include "point.hpp"
 
 namespace route {
 
@@ -15,8 +15,10 @@ namespace route {
             double distance;
 
         public:
+            Route();
             void addPoint(const Point *point);
             void swap(const int *index_point_first, const int *index_point_seconde);
+            void setDistance(const double *distance);
             double getDistance();
             Points getPoints();
     };

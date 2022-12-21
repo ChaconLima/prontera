@@ -1,8 +1,8 @@
 #ifndef EXCEPTION_HPP
 #define EXCEPTION_HPP
 
-#include<exception>
-#include<string>
+#include <exception>
+#include <string>
 
 namespace exception
 {

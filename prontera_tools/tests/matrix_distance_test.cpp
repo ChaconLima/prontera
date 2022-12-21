@@ -1,7 +1,7 @@
+#include <prontools/route.hpp>
+#include <prontools/matrix_distance.hpp>
+#include <prontools/exception.hpp>
 #include <gtest/gtest.h>
-#include <tools/route.hpp>
-#include <tools/matrix_distance.hpp>
-#include <tools/exception.hpp>
 #include <string>
 
 using namespace route;
@@ -28,6 +28,20 @@ Route getRoute() {
     route.addPoint(&point1);
    
     return route;
+}
+TEST(MatrixDistanceTest, GetPoints){
+    string a = "";
+    Route route = getRoute();
+    Points points = route.getPoints();
+    MatrixDistance distance = MatrixDistance(&points, &a);
+
+    Points getPoints = distance.getPoints();
+    for (size_t i = 0; i <points.size(); i++){
+        ASSERT_EQ(points[i].id, getPoints[i].id);
+        ASSERT_EQ(points[i].name, getPoints[i].name);
+        ASSERT_EQ(points[i].latitude, getPoints[i].latitude);
+        ASSERT_EQ(points[i].longitude, getPoints[i].longitude);
+    }
 }
 
 TEST(MatrixDistanceTest, GenerateKey){

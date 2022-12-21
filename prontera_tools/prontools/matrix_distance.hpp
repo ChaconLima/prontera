@@ -1,9 +1,9 @@
 #ifndef MATRIX_DISTANCE_HPP
 #define MATRIX_DISTANCE_HPP
 
-#include<string>
-#include<tools/direction.hpp>
-#include<tools/point.hpp>
+#include <string>
+#include "direction.hpp"
+#include "point.hpp"
 
 namespace matrix_distance{
 
@@ -24,6 +24,7 @@ namespace matrix_distance{
         public:
             MatrixDistance(const Points *points, const string *engine);
             Direction getDirection(const Point *origin, const Point *destination);
+            Points getPoints() const;
             
     };
     

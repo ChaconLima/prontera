@@ -1,7 +1,16 @@
-#include "../route.hpp"
+#include "../prontools/route.hpp"
 #include <bits/stdc++.h>
 
 namespace route {
+
+    Route::Route(){
+        this->points.resize(0);
+        this->distance=0;
+    }
+    
+    void Route::setDistance(const double *distance){
+        this->distance = *distance;
+    }
 
     double Route::getDistance(){
         return this->distance;

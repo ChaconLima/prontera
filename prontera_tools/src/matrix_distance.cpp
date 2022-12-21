@@ -1,5 +1,5 @@
-#include "../matrix_distance.hpp"
-#include <tools/exception.hpp>
+#include "../prontools/matrix_distance.hpp"
+#include "../prontools/exception.hpp"
 #include <sstream>
 #include <cmath>
 
@@ -57,5 +57,9 @@ namespace matrix_distance{
         strs << *dbl;
         std::string str = strs.str();
         return str;
+    }
+
+    Points MatrixDistance::getPoints() const{
+        return this->points;
     }
 }
