@@ -6,5 +6,6 @@
 #include "matrix_distance.hpp"
 #include "point.hpp"
 #include "route.hpp"
+#include "random.hpp"
 
 #endif
